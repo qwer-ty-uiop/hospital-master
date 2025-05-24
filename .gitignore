@@ -1,0 +1,118 @@
+# 通用基础配置
+#################
+# 操作系统生成文件
+.DS_Store            # macOS 系统文件
+Thumbs.db            # Windows 缩略图缓存
+ehthumbs.db          # Windows 旧版缩略图
+Desktop.ini          # Windows 文件夹配置
+
+# 编辑器/IDE 文件
+.idea/               # JetBrains IDE (IntelliJ, WebStorm等)
+.vscode/             # VS Code 配置
+*.suo                # Visual Studio 用户选项
+*.swp                # Vim 交换文件
+*.sublime-workspace  # Sublime Text 工作区
+
+# 语言通用配置
+################
+# 编译产物
+*.exe
+*.dll
+*.so
+*.pyc
+__pycache__/
+*.class
+*.jar
+*.war
+
+# 依赖目录
+node_modules/        # Node.js
+venv/                # Python 虚拟环境
+target/              # Rust/Maven
+bin/                 # 编译输出目录
+dist/                # 打包输出目录
+build/               # 构建目录
+
+# 日志文件
+*.log
+logs/
+
+# 环境文件
+.env                 # 环境变量（重要！不要提交敏感信息）
+.env.local
+.env.*.local
+
+# 调试文件
+*.dump
+*.pid
+
+# 测试相关
+coverage/            # 测试覆盖率报告
+junit.xml            # 测试报告
+test-results/        # 测试结果
+
+
+# 按项目类型扩展配置（根据实际需要选择）
+#######################################
+# Web 项目扩展
+################
+.cache/             # 静态资源缓存
+.sass-cache/        # Sass 编译缓存
+*.css.map           # CSS source maps
+
+# React/Vue 项目
+/public/_mock       # 本地 mock 数据
+.eslintcache        # ESLint 缓存
+
+# Node.js 扩展
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Python 扩展
+################
+*.py[cod]
+*.egg-info/
+.installed.cfg
+
+# Java 扩展
+################
+.gradle/
+.apt_generated/
+
+# Android 扩展
+################
+*.apk
+*.ap_
+*.dex
+*.keystore
+local.properties
+
+# Go 扩展
+################
+vendor/            # Go 依赖目录
+/go-workspace       # GOPATH 设置
+
+# Rust 扩展
+################
+Cargo.lock          # 注意：Rust项目通常需要提交 Cargo.lock
+
+# Docker 扩展
+################
+docker-compose.override.yml  # 本地Docker配置覆盖
+
+# macOS 系统扩展
+################
+# 防止 .DS_Store 扩散
+*.DS_Store
+**/.DS_Store
+
+# 自定义项目特殊配置
+####################
+# 示例：忽略本地开发用的数据库文件
+*.db
+*.sqlite3
+
+# 忽略本地调试配置覆盖
+config.local.*
