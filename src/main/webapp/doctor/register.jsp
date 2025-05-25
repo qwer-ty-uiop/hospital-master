@@ -209,8 +209,8 @@
         </form>
 
         <div style="margin-top: 20px;">
-            <span><a href="doctor_findPwd.jsp">找回密码</a></span>
-            <span><a href="doctor_login.jsp" class="pull-right">医生登录</a></span>
+            <span><a href="findPwd.jsp">找回密码</a></span>
+            <span><a href="login.jsp" class="pull-right">医生登录</a></span>
         </div>
     </div>
 </div>
