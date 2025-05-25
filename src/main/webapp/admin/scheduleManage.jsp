@@ -120,7 +120,7 @@
                     <%
                         List<WorkDay> workDays = (List<WorkDay>) request.getAttribute("workDays");
                         StringBuffer sb = new StringBuffer();
-                        for (int i = 0; i < 7; i++) {
+                        for (int i = 0; workDays.size() > 0 && i < 7; i++) {
                             sb.append("<ul><li class='date'>");
                             sb.append("星期");
                             if ("0".equals(workDays.get(i * 2).getWorktime())) {
