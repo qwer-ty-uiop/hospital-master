@@ -33,8 +33,11 @@ public class Login extends HttpServlet {
                     if(admin.getPassword().equals(password)){
                         req.getSession().setAttribute("admin",admin);
                         resp.sendRedirect("admin/index.jsp");
+                        return;
                     }
                 }
+                req.getSession().setAttribute("message","用户名或密码错误！！");
+                req.getRequestDispatcher("admin/login.jsp").forward(req,resp);
                 break;
             case "医生":
                 DoctorDao doctorDao=new DoctorDao();
